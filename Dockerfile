@@ -3,5 +3,5 @@
 FROM ubuntu-latest
 RUN apt-get -y update
 RUN apt-get -y install nginx
-FROM nginx:latest
-COPY ./index.html /var/www/html/index.html
+FROM nginx:alpine
+COPY ./index.html /usr/share/nginx/html/index.html
