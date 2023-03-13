@@ -3,5 +3,5 @@
 FROM ubuntu:20.04
 RUN apt-get -y update
 RUN apt-get -y install nginx
-RUN apt-get -y install docker
-RUN docker pull nginx:1.23
+RUN pull nginx:1.23
+COPY https://github.com/HasanHR/Docker/index.html /usr/share/nginx/index.html
