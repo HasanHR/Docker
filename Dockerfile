@@ -3,4 +3,5 @@
 FROM ubuntu:20.04
 RUN apt-get -y update
 RUN apt-get -y install nginx
+RUN apt-get -y install docker
 RUN docker pull nginx:1.23
