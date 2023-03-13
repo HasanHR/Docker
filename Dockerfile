@@ -2,6 +2,7 @@
 # Basic nginx dockerfile starting with Ubuntu 20.04
 FROM ubuntu-latest
 RUN apt-get -y update
+RUN apt-get install -y apt-utils
 RUN apt-get -y install nginx
 FROM nginx:alpine
 COPY ./index.html /usr/share/nginx/html/index.html
